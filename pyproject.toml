@@ -1,0 +1,11 @@
+[tool]
+[tool.poetry]
+name = "GetApiIDAndHash"
+version = "1.0"
+description = "Automatic Deploy GetApiIDAndHash"
+authors = ["cerceynlab"]
+[tool.poetry.dependencies]
+python = "^3.8"
+bs4 = "*"
+requests = "*"
+rich = "*"
