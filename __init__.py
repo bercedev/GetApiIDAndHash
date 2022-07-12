@@ -22,6 +22,10 @@ def logo (satirbırak=False):
         for i in range(25):
             console.print("\n")
     console.print(Panel(f'[bold medium_purple]{text}[/]',width=90),justify="center")
-def tamamlandi (saniye):
-   console.print(Panel(f"[bold green]Kurulum Tamamlandı!\n[i]Botu {round(saniye)} saniye içinde Kurdunuz.[/]\n\n[bold green]Bir süre sonra herhangi bir sohbete .alive yazarak test edebilirsiniz. İyi günler dilerim :)[/]",width=70),justify="center")                     
+def tamamlandi (api_id,api_hash):
+   console.print(Panel(f"[bold green]Herşey Tamam!\n[i]Bilgileriniz: [/]",width=70),justify="center") 
+   onemli("""Api ID:
+   {}""".format(str(api_id)))
+   onemli("""Api Hash:
+   {}""".format(api_hash))
                    
