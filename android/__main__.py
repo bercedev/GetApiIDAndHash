@@ -62,5 +62,12 @@ if __name__=="__main__":
          api_hash = g_inputs[1].string
          basarili("[i] Bilgiler Getirildi! Lütfen Bunları Not Ediniz.\n\n")
          tamamlandi(app_id,api_hash)
+      elif  soup.title.string == "App configuration":
+         print("[i] Halihazır da Uygulama Oluşturmuşsunuz. API ID/HASH Çekiliyor...")
+         g_inputs = soup.find_all("span", {"class": "form-control input-xlarge uneditable-input"})
+         app_id = g_inputs[0].string
+         api_hash = g_inputs[1].string
+         print("[i] Bilgiler Getirildi! Lütfen Bunları Not Ediniz.\n\n")
+         tamamlandi(app_id,api_hash)
 else:
     hata("Hata")
